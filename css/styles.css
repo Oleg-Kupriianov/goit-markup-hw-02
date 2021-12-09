@@ -115,6 +115,10 @@ body {
   background: var(--button-background);
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* Features */
 .features-title {
   font-weight: 700;
