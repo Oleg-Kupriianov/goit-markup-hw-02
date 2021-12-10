@@ -1,23 +1,16 @@
 :root {
   --primary-text-color: #212121;
   --text-color: #757575;
-  --accent-color: #2196f3;
-  --logo-color: #2196f3;
-  --logo-color-header: #000000;
-  --logo-color-footer: #ffffff;
-  --title: #000000;
-  --main-background: #ffffff;
+  --color-bg-blue: #2196f3;
+  --color-logo-title: #000000;
+  --color-bg-white: #ffffff;
   --secondary-background: #f5f4fa;
-  --hero-background: #2f303a;
-  --footer-background: #2f303a;
-  --button-background: #2196f3;
-  --button-color: #ffffff;
-  --address-color-fact: #ffffff;
+  --color-bg-hero-footer: #2f303a;
   --address-color-mail-tel: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  background-color: var(--main-background);
+  background-color: var(--color-bg-white);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -27,7 +20,7 @@ body {
 }
 
 .logo {
-  color: var(--logo-color);
+  color: var(--color-bg-blue);
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
@@ -36,7 +29,7 @@ body {
 }
 
 .logo-color-header {
-  color: var(--logo-color-header);
+  color: var(--color-logo-title);
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
@@ -44,7 +37,7 @@ body {
 }
 
 .logo-color-footer {
-  color: var(--logo-color-footer);
+  color: var(--color-bg-white);
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
@@ -59,17 +52,36 @@ body {
   line-height: 1.14;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
 .site-nav .link.current {
-  color: var(--accent-color);
+  color: var(--color-bg-blue);
 }
 
 .link {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--color-bg-blue);
+}
+
+.link-header {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.link-header:hover,
+.link-header:focus {
+  color: var(--color-bg-blue);
 }
 
 .auth-nav .link {
@@ -81,13 +93,13 @@ body {
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-  color: var(--accent-color);
+  color: var(--color-bg-blue);
 }
 
 /* hero */
 .hero {
-  color: var(--main-background);
-  background: var(--hero-background);
+  color: var(--color-bg-white);
+  background: var(--color-bg-hero-footer-);
 }
 
 .hero-title {
@@ -101,7 +113,7 @@ body {
 
 .button {
   background: var(--secondary-background);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
   display: flex;
@@ -111,8 +123,8 @@ body {
 
 .button:hover,
 .button:focus {
-  color: var(--button-color);
-  background: var(--button-background);
+  color: var(--color-bg-white);
+  background: var(--color-bg-blue);
 }
 
 .pointer {
@@ -124,9 +136,12 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .features-text {
+  color: var(--text-color);
   font-size: 14px;
   line-height: 1.71;
 }
@@ -134,7 +149,7 @@ body {
 /* work */
 .work-title,
 .team-title {
-  color: var(--title);
+  color: var(--color-logo-title);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -146,7 +161,7 @@ body {
   background: var(--secondary-background);
 }
 .team-list {
-  background: var(--main-background);
+  background: var(--color-bg-white);
 }
 
 .team-names {
@@ -158,6 +173,7 @@ body {
 
 .team-profession {
   color: var(--text-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -172,17 +188,43 @@ body {
 }
 
 .gallery-text {
+  color: var(--text-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
 
 /* footer */
 .footer {
-  background: var(--footer-background);
+  background: var(--color-bg-hero-footer);
 }
-.address-fact {
-  color: var(--address-color-fact);
-}
-.address-mail-tel {
+
+.link-footer {
   color: var(--address-color-mail-tel);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--color-bg-blue);
+}
+
+.link-footer-address {
+  color: var(--color-bg-white);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.link-footer-address:hover,
+.link-footer-address:focus {
+  color: var(--color-bg-blue);
 }
